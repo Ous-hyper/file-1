@@ -1,0 +1,237 @@
+
+/*this is the first etape  */
+
+body{
+    padding: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+  section {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+  }
+  
+  @media (min-width: 600px) {
+    section {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 900px) {
+    section {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (min-width: 1500px) {
+    section {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  /** this is a header */
+  .header{
+    display: flex;
+    width: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: 1000;
+  }
+  
+  .header > div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 10px;
+  }
+  
+  /**this is the first barre */
+  
+  .first-barre{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right:20px;
+    position: relative;
+    padding-right:10px ;
+  }
+  .first-barre p{
+    font-size: 10px;
+    position:absolute;
+    right: 0;
+    top: 12px;
+  }
+  .logo-menu{
+  width: 25px;
+  padding: 5px 7px;
+  cursor: pointer;
+  height: 30px;
+  }
+  .logo-menu:hover{
+    background-color:#ececec;
+    border-radius: 70px;
+  }
+  .logo{ /** logo youtube  ----->*/
+    width: 90px;
+  }
+  
+  /**this is a second barre  */
+  
+  .second-barre{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 15px;
+    
+  }
+  .input{
+    width:300px;
+    height: 35px;
+    padding: 2px 8px;
+    border: 1px  solid;
+    border-radius:25px 0px 0px 25px;
+    border-right: none;
+  }
+  .logo-search{
+    width:25px;
+    cursor: pointer;
+    border-radius:0px 25px 25px 0px;
+    margin-left: -30px;
+   background-color: #f7f7f7;
+   padding: 7px;
+   border: 1px solid;
+   border-left: none;
+  }
+  .logo-search:hover{
+    background-color:#ededed;
+  }
+  .logo-micro{
+    padding:8px;
+    width:20px;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #ededed;
+  }
+  
+  /**this is a third barre */
+  
+  .third-barre{
+   display: flex;
+   align-items: center;
+   gap: 15px;
+  }
+  .third-barre p{
+    background-color: #ededed;
+    padding: 8px;
+    border-radius: 0px 25px 25px 0px;
+    cursor:pointer;
+  }
+  .logo-notification{
+    width: 20px;
+    padding: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #ededed;
+  }
+  .plus-creer{
+    width: 18px;
+    background-color: #ededed;
+    padding:8px;
+    margin-right:-16px ;
+    border-radius: 25px 0px 0px 25px ;
+    cursor:pointer;
+    margin-left: 8px;
+  }
+  .logo-profile{
+    width: 34px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  /**this is a effect botons */
+  
+  .effect-text {
+    position: relative;
+    padding-bottom:1px;
+  }
+  .effect-text p{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right:-20px;
+    bottom:-1px;
+    background-color: #606060;
+    color: white;
+    padding: 5px;
+    border-radius:12px;
+    opacity:0;
+  }
+  .effect-text:hover p{
+    opacity: 1;
+  }
+  
+  /**this is a side barre */
+  
+  .side-barre{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top:100px;
+  width: 85px;
+  position:fixed;
+  z-index: 100;
+  background-color: white;
+  }
+  .side-container{
+    padding:16px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: roboto , Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .side-container:hover{
+    background-color: #ececec;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .icons{
+    width: 25px;
+  }
+  
+  /**this is a section */
+  
+  .video-preview{
+  padding:px;
+  display:inline-block;
+  }
+  .video-info{
+    display: grid;
+    grid-template-columns: 60px 190px;
+  }
+  .thumbnail{
+    width:350px;
+    border-radius: 20px;
+  }
+  .photo-profile{
+    width: 50px;
+   border-radius: 25px;
+   margin-top: 3px;
+  }
+  .details-video{
+    margin-top:8px;
+    margin-bottom: 0px;
+    color:#606060 ;
+    font-size:15px;
+  }
+  .details-video-title{
+    font-size:large;
+  }
