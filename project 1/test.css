@@ -165,7 +165,7 @@ body{
     align-items: center;
     position: absolute;
     right:-20px;
-    bottom:-1px;
+    bottom:-5px;
     background-color: #606060;
     color: white;
     padding: 5px;
@@ -178,33 +178,45 @@ body{
   
   /**this is a side barre */
   
-  .side-barre{
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  top:100px;
-  width: 85px;
-  position:fixed;
-  z-index: 100;
-  background-color: white;
+  .side-barre {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top:95px;
+    width: 85px;
+    z-index: 100;
+    background-color: white;
+    transition: all 0.3s ease; /* إضافة انتقال سلس */
+    overflow: hidden; /* إخفاء المحتوى الزائد */
   }
-  .side-container{
-    padding:16px 0px;
+  
+  .side-barre:hover {
+    width:150px; /* العرض عند التكبير */
+  }
+  
+  .side-container {
+    padding: 16px 0px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* تعديل المحاذاة */
     align-items: center;
-    font-family: roboto , Arial, Helvetica, sans-serif;
+    font-family: roboto, Arial, Helvetica, sans-serif;
     font-size: 12px;
-    flex-direction: column;
-    gap: 5px;
+    flex-direction:row; /* تغيير إلى اتجاه أفقي */
+    gap: 15px;
+    padding-left:20px; /* إضافة مسافة داخلية */
+    white-space: nowrap; /* منع التفاف النص */
+    transition: 0.1s;
   }
-  .side-container:hover{
+  
+  .side-container:hover {
     background-color: #ececec;
     border-radius: 10px;
     cursor: pointer;
   }
-  .icons{
+  
+  .icons {
     width: 25px;
+    flex-shrink: 0; /* منع تصغير حجم الأيقونات */
   }
   
   /**this is a section */
